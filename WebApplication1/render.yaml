@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: studentapi
+    runtime: docker
+    dockerfilePath: ./WebApplication1/Dockerfile
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Development
+      - key: ASPNETCORE_URLS
+        value: http://+:8080
